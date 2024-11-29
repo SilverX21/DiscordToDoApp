@@ -31,17 +31,14 @@ body {
     text-align: start;
 }
 
-
 #teste1 {
     background-color: green;
     border-radius: 50px;
     padding: 10px;
     width: 250px;
-
     margin-right: auto;
     margin-left: auto;
 }
-
 
 .title {
     font-size: 3rem;
@@ -51,31 +48,24 @@ body {
 .todo-list {
     background-color: dimgray;
     height: 250px;
+    width: 900px;
     margin: auto;
     white-space: nowrap;
-    display: inline-flex;
+    display: -webkit-inline-box;
     overflow-x: auto;
 }
 
 .todo-list-item {
     background-color: green;
-    width: 200px;
+    min-width: 120px;
     height: 200px;
     margin: 10px;
-    border-radius: 50px;
+    border-radius: 25px;
     align-items: center;
-    /*display: grid;*/
-    /*float: left;*/
     margin-right: 5px;
     margin-left: 5px;
 }
 
 .todo-item-title {
     text-align: center;
-}
-
-.container {
-    width: 30em;
-    overflow-x: auto;
-    white-space: nowrap;
 }
