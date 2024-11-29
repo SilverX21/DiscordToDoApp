@@ -19,6 +19,7 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-color: gray;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -28,4 +29,53 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
+}
+
+
+#teste1 {
+    background-color: green;
+    border-radius: 50px;
+    padding: 10px;
+    width: 250px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.todo-list {
+    background-color: dimgray;
+    height: 250px;
+    margin: auto;
+    white-space: nowrap;
+    display: inline-flex;
+    overflow-x: auto;
+}
+
+.todo-list-item {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 50px;
+    align-items: center;
+    /*display: grid;*/
+    /*float: left;*/
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.todo-item-title {
+    text-align: center;
+}
+
+.container {
+    width: 30em;
+    overflow-x: auto;
+    white-space: nowrap;
 }
