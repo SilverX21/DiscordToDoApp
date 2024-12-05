@@ -55,17 +55,36 @@ body {
     overflow-x: auto;
 }
 
-.todo-list-item {
-    background-color: green;
-    min-width: 120px;
-    height: 200px;
-    margin: 10px;
-    border-radius: 25px;
-    align-items: center;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
 .todo-item-title {
     text-align: center;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.todo-list-header {
+
+}
+
+.todo-list-item {
+    background-color: blue;
+    display: grid;
+    margin: auto;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 6px 4px darkslateblue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.todo-list-remove-btn {
+    background-color: orange;
+    min-width: 30px;
+    height: 30px;
+}
+
+.todo-list-add-btn {
+    background-color: red;
+    min-width: 30px;
+    height: 30px;
 }

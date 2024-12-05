@@ -2,17 +2,46 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="row">
-    <div class="col-12">
-        <h1 class="title">
-            ToDo List
-        </h1>
+<div>
+    <div class="row" style="text-align: center;">
+        <div class="col-12">
+            <div class="todo-list-header">
+                 <h1>ToDo List</h1>
+            </div>
+        </div>
     </div>
 </div>
-<div class="row" style="text-align: center;">
+
+<div>
+    <div class="row">
+        <div class="col-12" style="text-align: center;">
+            <input type="text"/>
+            <button type="button" class="todo-list-add-btn"">+</button>
+        </div>
+    </div>
+</div>
+
+<div>
+
+    @for (int i = 0; i < 20; i++)
+    {
+         <div class="row justify-content-center" style="text-align: center;">
+            <div class="col-5">
+                <div class="todo-list-item">
+                    Todo
+                </div>
+            </div>
+            <div class="col-1">
+                <button type="button" class="todo-list-remove-btn">-</button>
+            </div>
+        </div>
+    }
+</div>
+
+@*  <div class="row" style="text-align: center; margin-top:20px;">
     <div class="col-12">
         <div class="todo-list align-items-center justify-content-center">
-            @for (int i = 0; i < 20; i++)
+            @for (int i = 0; i < 5; i++)
             {
                 <div class="todo-list-item">
                     <h1 class="todo-item-title">
@@ -22,4 +51,4 @@
             }
         </div>
     </div>
-</div>
+</div>  *@
